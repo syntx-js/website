@@ -8,6 +8,7 @@
   * [Command](guide/client/command.md)
   * [Intents](guide/client/intents.md)
   * [Activities](guide/client/activities.md)
+  * [Register commands](guide/client/register-commands.md)
 
 ***
 
@@ -15,3 +16,6 @@
   * [random](functions/random/README.md)
     * [text](functions/random/text.md)
     * [number](functions/random/number.md)
+  * [message](functions/message/README.md)
+    * [argument](functions/message/argument.md)
+    * [sendMessage](functions/message/sendmessage.md)

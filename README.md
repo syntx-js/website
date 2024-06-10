@@ -46,7 +46,7 @@ First, we must request `ERXClient` and `Intents` from the `syntx.js` library.
 
 {% code lineNumbers="true" %}
 ```javascript
-const { ERXClient } = require("syntx.js") 
+const { ERXClient, Intents } = require("syntx.js") 
 ```
 {% endcode %}
 
@@ -106,5 +106,6 @@ client.command({
 })
 
 client.start()
+client.registerCommands()
 ```
 {% endcode %}

@@ -7,3 +7,5 @@ In order to access the functions that Syntx offers you, you must first require `
 const { cmd } = require("syntx.js")
 ```
 {% endcode %}
+
+This doesn't apply to everything.
