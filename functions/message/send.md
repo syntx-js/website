@@ -1,11 +1,11 @@
-# sendMessage
+# send
 
 Function that is used to send a message to a specific or current channel. Something similar to `<argument>.channel.send`&#x20;
 
 ### Usage
 
 ```javascript
-cmd.message.sendMessage({text, channel, returnId?}, <message>)
+cmd.message.send({text, channel, returnId?}, <message>)
 ```
 
 
@@ -23,7 +23,7 @@ cmd.message.sendMessage({text, channel, returnId?}, <message>)
 client.command({
     name: "test",
     content: (message) => {
-        cmd.message.sendMessage({
+        cmd.message.send({
             text: "Hi!"
         }, message)
     }
@@ -36,7 +36,7 @@ But it is not always used that way. If you decide that `returnId` is `true`, its
 client.command({
     name: "test",
     content: (message) => {
-        const messageId = cmd.message.sendMessage({ text: "Hi!", returnId: true }) // This constant stores the id of the message.
+        const messageId = cmd.message.send({ text: "Hi!", returnId: true }, message) // This constant stores the id of the message.
         console.log(messageId) // Return the ID.
     }
 })
