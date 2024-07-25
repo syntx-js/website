@@ -1,8 +1,7 @@
 # Table of contents
 
-* [home](README.md)
+* [Home](README.md)
 * [Syntx.js](<README (1).md>)
-  * [Introduction](syntx.js/readme.md)
   * [Client](syntx.js/client/README.md)
     * [Command](syntx.js/client/command.md)
     * [Intents](syntx.js/client/intents.md)
