@@ -1,26 +1,21 @@
 # Table of contents
 
-* [Introduction](README.md)
-
-## Guide
-
-* [Client](guide/client/README.md)
-  * [Command](guide/client/command.md)
-  * [Intents](guide/client/intents.md)
-  * [Activities](guide/client/activities.md)
-  * [Register commands](guide/client/register-commands.md)
-
-***
-
-* [Functions](functions/README.md)
-  * [random](functions/random/README.md)
-    * [text](functions/random/text.md)
-    * [number](functions/random/number.md)
-  * [message](functions/message/README.md)
-    * [argument](functions/message/argument.md)
-    * [send](functions/message/send.md)
-  * [client](functions/client/README.md)
-    * [id](functions/client/id.md)
-  * [user](functions/user/README.md)
-    * [authorId](functions/user/authorid.md)
-    * [username](functions/user/username.md)
+* [Syntx.js](README.md)
+  * [Introduction](syntx.js/readme.md)
+  * [Client](syntx.js/client/README.md)
+    * [Command](syntx.js/client/command.md)
+    * [Intents](syntx.js/client/intents.md)
+    * [Activities](syntx.js/client/activities.md)
+    * [Register commands](syntx.js/client/register-commands.md)
+  * [Functions](syntx.js/functions/README.md)
+    * [random](syntx.js/functions/random/README.md)
+      * [text](syntx.js/functions/random/text.md)
+      * [number](syntx.js/functions/random/number.md)
+    * [message](syntx.js/functions/message/README.md)
+      * [argument](syntx.js/functions/message/argument.md)
+      * [send](syntx.js/functions/message/send.md)
+    * [client](syntx.js/functions/client/README.md)
+      * [id](syntx.js/functions/client/id.md)
+    * [user](syntx.js/functions/user/README.md)
+      * [authorId](syntx.js/functions/user/authorid.md)
+      * [username](syntx.js/functions/user/username.md)

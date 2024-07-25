@@ -1,6 +1,4 @@
-# Syntx.js
-
-
+# Introduction
 
 <figure><img src="https://github.com/rqnjs/website/blob/main/img/syntx.js.png?raw=true" alt=""><figcaption><p>Create Discord bots a little faster and easier.</p></figcaption></figure>
 
