@@ -35,7 +35,7 @@ client.presence({
 ```
 {% endcode %}
 
-<figure><img src="../../.gitbook/assets/Captura de pantalla 2024-06-08 021639.png" alt="Result"><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Captura de pantalla 2024-06-08 021639.png" alt="Result"><figcaption><p>Result</p></figcaption></figure>
 
 ***
 

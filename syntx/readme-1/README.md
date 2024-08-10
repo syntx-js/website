@@ -10,13 +10,13 @@ Syntx.js is an NPM package designed to simplify and accelerate the creation of D
 
 ## Tables of contents
 
-* [Installing](<README (1).md#installing>)
-* [How to create a new client](<README (1).md#how-to-create-a-new-client>)\
-  [Request the library](<README (1).md#request-the-library>)\
-  [Create the new client](<README (1).md#create-the-new-client>)\
-  [Run the bot](<README (1).md#run-the-bot>)
-* [Example using the command method](<README (1).md#example-using-the-command-method>)
-* [Change the presence of your bot](<README (1).md#change-the-presence-of-your-bot>)
+* [Installing](./#installing)
+* [How to create a new client](./#how-to-create-a-new-client)\
+  [Request the library](./#request-the-library)\
+  [Create the new client](./#create-the-new-client)\
+  [Run the bot](./#run-the-bot)
+* [Example using the command method](./#example-using-the-command-method)
+* [Change the presence of your bot](./#change-the-presence-of-your-bot)
 
 
 
