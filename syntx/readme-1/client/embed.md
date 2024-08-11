@@ -1,6 +1,6 @@
 ---
-description: Set up an embed message to send later.
 icon: angle-right
+description: Set up an embed message to send later.
 ---
 
 # Embed
@@ -68,8 +68,16 @@ client.command({
 })
 ```
 
+### Fields
+
 | OPTION   | TYPE    | REQUIRED |
 | -------- | ------- | -------- |
 | `name`   | string  | true     |
 | `value`  | string  | true     |
 | `inline` | boolean | false    |
+
+### SetURL
+
+| OPTION | TYPE   | REQUIRED |
+| ------ | ------ | -------- |
+| `url`  | string | true     |
