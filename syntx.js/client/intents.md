@@ -1,3 +1,7 @@
+---
+icon: angle-right
+---
+
 # Intents
 
 ## Table of Content
@@ -98,7 +102,7 @@ Yes, that's right, Quick Intents. But what is it for? Quick intents are used to 
 ```diff
 const client = new ERXClient({
 -    intents: [Intents.Guilds, Intents.GuildMembers, Intents.GuildBans, Intents.GuildEmojisAndStickers, Intents.GuildIntegrations, Intents.GuildWebhooks, Intents.GuildInvites, Intents.GuildVoiceStates, Intents.GuildPresences, Intents.GuildMessages, Intents.GuildMessageReactions, Intents.GuildMessageTyping, Intents.DirectMessages, Intents.DirectMessageReactions, Intents.DirectMessageTyping, Intents.MessageContent, Intents.GuildScheduledEvents, Intents.AutoModerationConfiguration, Intents.AutoModerationExecution]
-+    intents: [Intents.All]
++    intents: Intents.All
 })
 ```
 {% endcode %}
@@ -109,7 +113,7 @@ const client = new ERXClient({
 ```diff
 const client = new ERXClient({
 -    intents: [Intents.Guilds, Intents.MessageContent, Intents.GuildMessages, Intents.GuildMembers]
-+    intents: [Intents.Fast]
++    intents: Intents.Fast
 })
 ```
 {% endcode %}

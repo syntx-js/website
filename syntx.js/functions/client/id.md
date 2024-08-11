@@ -1,5 +1,6 @@
 ---
 description: Gets the bot ID.
+icon: angle-right
 ---
 
 # id

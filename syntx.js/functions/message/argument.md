@@ -1,3 +1,7 @@
+---
+icon: angle-right
+---
+
 # argument
 
 It works to get a specific argument from the user's message.

@@ -1,3 +1,7 @@
+---
+icon: robot
+---
+
 # Client
 
 Options of our client.
@@ -6,7 +10,7 @@ Options of our client.
 </strong><strong>
 </strong><strong>const client = new ERXClient({
 </strong>    prefix: string,
-    intents: [Intents.All],
+    intents: Intents.All,
     token: string
 })
 </code></pre>

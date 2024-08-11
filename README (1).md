@@ -1,6 +1,8 @@
+---
+icon: sparkles
+---
+
 # Syntx.js
-
-
 
 <figure><img src="https://github.com/rqnjs/website/blob/main/img/syntx.js.png?raw=true" alt=""><figcaption><p>Create Discord bots a little faster and easier.</p></figcaption></figure>
 
@@ -10,13 +12,13 @@ Syntx.js is an NPM package designed to simplify and accelerate the creation of D
 
 ## Tables of contents
 
-* [Installing](./#installing)
-* [How to create a new client](./#how-to-create-a-new-client)\
-  [Request the library](./#request-the-library)\
-  [Create the new client](./#create-the-new-client)\
-  [Run the bot](./#run-the-bot)
-* [Example using the command method](./#example-using-the-command-method)
-* [Change the presence of your bot](./#change-the-presence-of-your-bot)
+* [Installing](<README (1).md#installing>)
+* [How to create a new client](<README (1).md#how-to-create-a-new-client>)\
+  [Request the library](<README (1).md#request-the-library>)\
+  [Create the new client](<README (1).md#create-the-new-client>)\
+  [Run the bot](<README (1).md#run-the-bot>)
+* [Example using the command method](<README (1).md#example-using-the-command-method>)
+* [Change the presence of your bot](<README (1).md#change-the-presence-of-your-bot>)
 
 
 
@@ -60,7 +62,7 @@ Next, create a new `ERXClient` instance by passing in a configuration object wit
 ```javascript
 const client = new ERXClient({
     prefix: "!",
-    intents: [Intents.All], // This can be changed by numbers. For example, all Discord intents in numbers are: 3276799
+    intents: Intents.All, // This can be changed by numbers. For example, all Discord intents in numbers are: 3276799
     token: "YOUR_DISCORD_BOT_TOKEN"
 })
 ```
@@ -72,7 +74,7 @@ const client = new ERXClient({
 | --------- | -------------- | ------------------------------------------------------- |
 | `prefix`  | string         | The symbol with which you will start all your commands. |
 | `intents` | array / number | The number of intents the bot will have.                |
-| `token`   | sting          | your bot token.                                         |
+| `token`   | string         | your bot token.                                         |
 
 #### Run the bot
 
@@ -88,26 +90,29 @@ client.start()
 
 {% code lineNumbers="true" %}
 ```javascript
-const { ERXClient, Intents } = require("syntx.js")
+const { ERXClient, Intents, cmd } = require("syntx.js")
 
 const client = new ERXClient({
     prefix: "!",
-    intents: [Intents.All],
+    intents: Intents.All,
     token: "YOUR_DISCORD_BOT_TOKEN"
 })
 
-client.ready(() => {
-    console.log(`Bot ${client.bot.user.username} ready.`)
+client.ready(async () => {
+    const bot = cmd.user.username(cmd.user.id(client), client)
+    client.registerCommands()
+    console.log(`${bot} is ready.`)
 })
 
 client.command({
     name: "hi", // Command name.
     content: (message) => {
-        message.channel.send(`Hi ${message.author.username}!`)
+        cmd.message.send({
+            text: "Hello!"
+        }, message)
     }
 })
 
 client.start()
-client.registerCommands()
 ```
 {% endcode %}

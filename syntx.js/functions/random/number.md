@@ -1,3 +1,7 @@
+---
+icon: '0'
+---
+
 # number
 
 `random.number` works to choose a random number between `a` which is minimum and `b` which is maximum.

@@ -1,3 +1,7 @@
+---
+icon: text
+---
+
 # text
 
 What `random.text` does is return a completely random text from those provided above.

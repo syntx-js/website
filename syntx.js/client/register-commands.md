@@ -1,3 +1,7 @@
+---
+icon: angle-right
+---
+
 # Register commands
 
 It works to register your commands and activate them.

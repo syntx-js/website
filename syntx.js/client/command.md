@@ -1,3 +1,7 @@
+---
+icon: angle-right
+---
+
 # Command
 
 ## Table of Content
@@ -76,17 +80,17 @@ const client = new ERXClient({
     // You configuration
 })
 
-client.handler("./commands") // Enter the folder where all the commands will be.
+client.handler("./commands", true) // Enter the folder where all the commands will be.
 ```
 {% endcode %}
 
 2. Make sure the folder exists.
 
 ```
-commands/
-│ └── hello.js
+🗀 commands/
+│   └── hello.js
 ├── index.js
-├── package.json
+└── package.json
 ```
 
 3. Start making the code.
@@ -117,4 +121,3 @@ Do you notice the difference? If not, look at the next block.
 })
 ```
 {% endcode %}
-

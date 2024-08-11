@@ -1,5 +1,6 @@
 ---
 description: Gets the ID of the message author.
+icon: at
 ---
 
 # authorId

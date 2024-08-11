@@ -1,3 +1,7 @@
+---
+icon: angle-right
+---
+
 # send
 
 Function that is used to send a message to a specific or current channel. Something similar to `<argument>.channel.send`&#x20;
