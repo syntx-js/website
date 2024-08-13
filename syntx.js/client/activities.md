@@ -23,7 +23,7 @@ To add an activity to your bot, we must use the `presence` method in your code.
             type: string
         }
     ],
-    status: string
+    status?: string
 })
 ```
 {% endcode %}

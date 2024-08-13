@@ -8,11 +8,9 @@ What `random.text` does is return a completely random text from those provided a
 
 ### Usage
 
-```yang
+```javascript
 cmd.random.text([texts])
 ```
-
-
 
 | PARAMETER | TYPE   | DESCRIPTION        |
 | --------- | ------ | ------------------ |
@@ -29,7 +27,9 @@ const { ERXClient, Intents, cmd } = require("syntx.js")
 client.command({
     name: "random",
     content: (message) => {
-        message.channel.send(`Random text: ${cmd.random.text(["Seraph", "Discord", "Syntx"])}`)
+        cmd.message.send({
+            text: `Random Text: ${cmd.random.text(["Hi", "Hello", "Syntx"])}
+        }, message)
     }
 })
 ```

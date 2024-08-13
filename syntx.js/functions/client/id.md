@@ -1,6 +1,6 @@
 ---
-description: Gets the bot ID.
 icon: angle-right
+description: Gets the bot ID.
 ---
 
 # id
@@ -15,7 +15,7 @@ cmd.client.id(<client>)
 
 | OPTION   | TYPE     | DESCRIPTION                                                | REQUIRED |
 | -------- | -------- | ---------------------------------------------------------- | -------- |
-| `client` | function | Set the name of the variable where you created the client. | true     |
+| `client` | callback | Set the name of the variable where you created the client. | true     |
 
 ### Example
 

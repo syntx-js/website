@@ -22,7 +22,9 @@ const { ERXClient, Intents, cmd } = require("syntx.js")
 client.command({
     name: "number",
     content: (message) => {
-        message.channel.send(`Number: ${cmd.random.number(1, 100)}`)
+        cmd.message.send({
+            text: `Number: ${cmd.random.number(1, 100)}`
+        }, message)
     }
 })
 ```

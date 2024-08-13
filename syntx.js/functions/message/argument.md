@@ -1,10 +1,9 @@
 ---
 icon: angle-right
+description: It works to get a specific argument from the user's message.
 ---
 
 # argument
-
-It works to get a specific argument from the user's message.
 
 ### Usage
 
@@ -16,8 +15,10 @@ Exchange `<message>` with the name you gave to your content. For example, if you
 ```javascript
 client.command({
     name: "test",
-    content: (msg) => {
-        msg.channel.send(`First argument: ${cmd.message.argument(msg, 1)}`)
+    content: (message) => {
+        cmd.message.send({
+        text: `First argument: ${cmd.message.argument(msg, 1)}`
+        }, message)
     }
 })
 ```
@@ -30,9 +31,13 @@ client.command({
     content: (message) => {
         const arg = cmd.message.argument(message, 1) // Will return the first argument
         if (arg == "hi") {
-            message.channel.send("Hi!")
+            cmd.message.send({
+                text: `Hi!`
+            }, message)
         } else {
-            message.channel.send("I couldn't understand your message.")
+            cmd.message.send({
+                text: "I couldn't understand your message."
+            }. message)
         }
     }
 })

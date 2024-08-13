@@ -1,6 +1,6 @@
 ---
-description: Gets the user's avatar.
 icon: image
+description: Gets the user's avatar.
 ---
 
 # avatar
@@ -8,10 +8,8 @@ icon: image
 ### Usage
 
 ```javascript
-cmd.user.avatar(userID, <message>, { size, dynamic? })
+cmd.user.avatar(userID, <message>, { size?, dynamic? })
 ```
-
-
 
 | OPTION    | TYPE    | REQUIRED |
 | --------- | ------- | -------- |
@@ -32,7 +30,7 @@ const client = new ERXClient({
 client.command({
     name: "avatar",
     content: async (msg) => {
-        const avatar = await cmd.user.avatr(undefined, msg, { size: 4096 })
+        const avatar = await cmd.user.avatar(undefined, msg, { size: 4096 })
         cmd.message.send({
             text: avatar
         })

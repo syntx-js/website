@@ -1,5 +1,5 @@
 ---
-icon: angle-right
+icon: code-branch
 description: Set up an embed message to send later.
 ---
 
@@ -8,7 +8,7 @@ description: Set up an embed message to send later.
 ### Export the `Embed` module from the library
 
 ```javascript
-const { ERXClient, Intents, Embed, cmd } = require("syntx.js")
+const { Embed } = require("syntx.js")
 ```
 
 ### Create a new command and use the `Embed` method
@@ -32,7 +32,20 @@ client.command({
 
 We use `embed.build()` to get the embed information and send it.
 
-
+```javascript
+const embed = new Embed()
+embed.set({
+    title?: string,
+    description?: string,
+    color?: number,
+    footer?: string,
+    footerIcon?: string,
+    image?: string,
+    author?: string,
+    authorIcon?: string,
+    authorURL?: string
+})
+```
 
 | OPTION        | TYPE                 | REQUIRED |
 | ------------- | -------------------- | -------- |

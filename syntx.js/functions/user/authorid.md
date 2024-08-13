@@ -1,6 +1,6 @@
 ---
-description: Gets the ID of the message author.
 icon: at
+description: Gets the ID of the message author.
 ---
 
 # authorId
@@ -15,7 +15,7 @@ cmd.user.authorId(<message>)
 
 | OPTION    | TYPE     | DESCRIPTIONN                                       | REQUIRED |
 | --------- | -------- | -------------------------------------------------- | -------- |
-| `message` | function | The name of the variable you entered in `content`. | true     |
+| `message` | callback | The name of the variable you entered in `content`. | true     |
 
 ### Example
 

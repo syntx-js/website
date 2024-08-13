@@ -1,0 +1,6 @@
+---
+icon: minus
+---
+
+# Others
+

@@ -1,6 +1,6 @@
 ---
-description: Gets the name of a user using their ID.
 icon: tag
+description: Gets the name of a user using their ID.
 ---
 
 # username
@@ -13,10 +13,10 @@ cmd.user.username(id, <client>)
 
 
 
-| OPTION   | TYPE   | DESCRIPTION                                        | REQUIRED |
-| -------- | ------ | -------------------------------------------------- | -------- |
-| `id`     | string | User ID.                                           | true     |
-| `client` | object | Name of the variable where you created the client. | true     |
+| OPTION   | TYPE     | DESCRIPTION                                        | REQUIRED |
+| -------- | -------- | -------------------------------------------------- | -------- |
+| `id`     | string   | User ID.                                           | true     |
+| `client` | callback | Name of the variable where you created the client. | true     |
 
 ### Example
 
