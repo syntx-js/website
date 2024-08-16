@@ -27,19 +27,13 @@ Syntx.js is an NPM package designed to simplify and accelerate the creation of D
 In npm
 
 ```
-npm install syntx.js
+npm i syntx.js
 ```
 
-In yarn
+In GitHub (recommended)
 
 ```
-yarn add syntx.js
-```
-
-In pnpm
-
-```
-pnpm add syntx.js
+$ npm i github:syntx-js/syntx.js
 ```
 
 ### How to create a new client
@@ -70,11 +64,11 @@ const client = new ERXClient({
 
 
 
-| OPTION    | TYPE           | DESCRIPTION                                             |
-| --------- | -------------- | ------------------------------------------------------- |
-| `prefix`  | string         | The symbol with which you will start all your commands. |
-| `intents` | array / number | The number of intents the bot will have.                |
-| `token`   | string         | your bot token.                                         |
+| OPTION    | TYPE            | DESCRIPTION                                             |
+| --------- | --------------- | ------------------------------------------------------- |
+| `prefix`  | string          | The symbol with which you will start all your commands. |
+| `intents` | array \| number | The number of intents the bot will have.                |
+| `token`   | string          | your bot token.                                         |
 
 #### Run the bot
 
