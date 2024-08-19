@@ -30,6 +30,8 @@
       * [send](syntx.js/functions/message/send.md)
       * [content](syntx/readme-1/functions/message/content.md)
       * [mentioned](syntx/readme-1/functions/message/mentioned.md)
+      * [id](syntx/readme-1/functions/message/id.md)
+      * [addReactions](syntx/readme-1/functions/message/addreactions.md)
     * [client](syntx.js/functions/client/README.md)
       * [id](syntx.js/functions/client/id.md)
       * [ping](syntx/readme-1/functions/client/ping.md)
