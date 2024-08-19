@@ -1,6 +1,6 @@
 ---
-description: Returns the user's entire message.
 icon: angle-right
+description: Returns the user's entire message.
 ---
 
 # content
@@ -8,12 +8,15 @@ icon: angle-right
 ### Usage
 
 ```javascript
-cmd.message.content(<message>)
+cmd.message.content(<message>, firstArgument?: boolean)
 ```
 
-| OPTION    | TYPE     | REQUIRED |
-| --------- | -------- | -------- |
-| `message` | callback | true     |
+| OPTION          | TYPE     | REQUIRED |
+| --------------- | -------- | -------- |
+| `message`       | callback | true     |
+| `firstArgument` | boolean  | false    |
+
+If you set `firstArgument` to true, then this function will take into account the first argument of your message. That is, it will take into account the trigger of your command.
 
 ### Example
 
