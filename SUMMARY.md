@@ -48,3 +48,15 @@
 * [API](code-bin/api/README.md)
   * [Start using it](code-bin/api/start-using-it.md)
   * [Create a new paste](code-bin/api/create-a-new-paste.md)
+
+## DBTL › Bot List
+
+* [🇺🇸 EN](dbtl-bot-list/en/README.md)
+  * [API V1](dbtl-bot-list/en/api-v1/README.md)
+    * [Check if the user voted](dbtl-bot-list/en/api-v1/check-if-the-user-voted.md)
+* [🇪🇸 ES](dbtl-bot-list/es/README.md)
+  * [API V1](dbtl-bot-list/es/api-v1/README.md)
+    * [Verificar si un usuario votó](dbtl-bot-list/es/api-v1/verificar-si-un-usuario-voto.md)
+* [🇵🇹 PT](dbtl-bot-list/pt/README.md)
+  * [API V1](dbtl-bot-list/pt/api-v1/README.md)
+    * [Verifique se o usuário votou](dbtl-bot-list/pt/api-v1/verifique-se-o-usuario-votou.md)
