@@ -2,14 +2,7 @@
 icon: angle-right
 ---
 
-# Command
-
-## Table of Content
-
-* [Create commands](command.md#create-commands)\
-  [example](command.md#example)
-* [Command Handler](command.md#command-handler)\
-  [How to use it](command.md#how-to-use-it)
+# Command & Events
 
 ***
 
@@ -80,7 +73,7 @@ const client = new ERXClient({
     // You configuration
 })
 
-client.handler("./commands", true) // Enter the folder where all the commands will be.
+client.handler({ commands: "./commands", events: "./events" }, true) // Enter the folder where all the commands will be.
 ```
 {% endcode %}
 
@@ -89,6 +82,8 @@ client.handler("./commands", true) // Enter the folder where all the commands wi
 ```
 🗀 commands/
 │   └── hello.js
+🗀 events/
+│   └── messagecreate.js
 ├── index.js
 └── package.json
 ```
@@ -121,3 +116,55 @@ Do you notice the difference? If not, look at the next block.
 })
 ```
 {% endcode %}
+
+## Events
+
+To create an event, it's almost the same as if you were creating a command. Compared to little things.\
+\
+
+
+There are 2 ways to create events.
+
+1. Add the `Events` module to `syntx.js` (recommended)
+2. Write the name of the event.
+
+```javascript
+const { Events, cmd } = require("syntx.js")
+```
+
+```javascript
+<client>.event(Events.MessageDelete, (callback) => {
+    cmd.message.send({
+        text: "Hi"
+    }, callback)
+})
+```
+
+If you like everything more organized, you also have the option of making it a handler.
+
+```javascript
+// <client>.handler({ events: EVENTS_PATH })
+client.handler({ events: "./events" }, true)
+```
+
+```
+🗀 commands/
+│   └── hello.js
+🗀 events/
+│   └── hi.js
+├── index.js
+└── package.json
+```
+
+```diff
+- <client>.event(Events.MessageCreate, (callback) => {
+-    cmd.message.send({ text: "Hi" }, callback)
+- })
++  const { Events, cmd } = require("syntx.js")
++ module.exports = {
++     event: Events.MessageCreate,
++     content: async (callback) => {
++        cmd.message.send({ text: "Hi" }, callback)
++    }
++ }
+```

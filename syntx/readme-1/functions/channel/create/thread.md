@@ -1,6 +1,6 @@
 ---
-description: Create a thread.
 icon: angle-right
+description: Create a thread.
 ---
 
 # thread
@@ -8,7 +8,7 @@ icon: angle-right
 ### Usage
 
 ```javascript
-cmd.channel.create.thread({ channelID, messageID, name, duration, returnID? }, client)
+cmd.channel.create.thread({ channelID, messageID, name, duration, returnID?, type?, content? }, client)
 ```
 
 | OPTION      | TYPE     | REQUIRED |
@@ -19,6 +19,8 @@ cmd.channel.create.thread({ channelID, messageID, name, duration, returnID? }, c
 | `duration`  | number   | true     |
 | `returnID`  | boolean  | false    |
 | `client`    | callback | true     |
+| `type`      | string   | false    |
+| `content`   | string   | false    |
 
 ## Duration times
 
@@ -26,6 +28,11 @@ cmd.channel.create.thread({ channelID, messageID, name, duration, returnID? }, c
 * 1440
 * 4320
 * 10080
+
+## Types of type
+
+* GUILD\_PUBLIC\_THREAD
+* GUILD\_PRIVATE\_THREAD
 
 ### Example
 
@@ -38,7 +45,8 @@ client.command({
             messageID: msg.id,
             name: "Open",
             duration: 60, // in minutes
-            returnID: true
+            returnID: true,
+            content: "Hi"
         }, client)
         cmd.message.send({ text: `<#${thread}>` }, msg)
     }

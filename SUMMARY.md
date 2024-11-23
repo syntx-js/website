@@ -6,7 +6,7 @@
 
 * [Syntx.js](<README (1).md>)
   * [Client](syntx.js/client/README.md)
-    * [Command](syntx.js/client/command.md)
+    * [Command & Events](syntx.js/client/command.md)
     * [Interactions](syntx/readme-1/client/interactions.md)
     * [Intents](syntx.js/client/intents.md)
     * [Activities](syntx.js/client/activities.md)
