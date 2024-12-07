@@ -1,6 +1,6 @@
 ---
-description: Edit a message sent by the bot.
 icon: angle-right
+description: Edit a message sent by the bot.
 ---
 
 # edit
@@ -8,7 +8,7 @@ icon: angle-right
 ### Usage
 
 ```javascript
-cmd.message.edit({ data: { channel, message }, content?, embed?: { title?, description?, color?, image?, thumbnail?, timestamp?, author?, authorIcon?, authorURL?, footer?, footerIcon? } }), client
+cmd.message.edit({ data: { channel, message }, content?, embed?: { title?, description?, color?, image?, thumbnail?, timestamp?, author?, authorIcon?, authorURL?, footer?, footerIcon? } }, client)
 ```
 
 | OPTION        | TYPE     | REQUIRED |

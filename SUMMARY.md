@@ -16,6 +16,7 @@
     * [Variables](syntx/readme-1/others/variables.md)
     * [Embed](syntx/readme-1/others/embed.md)
     * [Buttons](syntx/readme-1/others/buttons.md)
+    * [Select Menus](syntx/readme-1/others/select-menus.md)
   * [Functions](syntx.js/functions/README.md)
     * [channel](syntx/readme-1/functions/channel/README.md)
       * [create](syntx/readme-1/functions/channel/create/README.md)
